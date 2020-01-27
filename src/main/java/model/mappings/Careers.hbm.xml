@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.mappings.Careers" table="careers" schema="wfrp4">
+        <id name="careerId" column="career_id"/>
+        <property name="careerName" column="career_name"/>
+        <property name="level1" column="level1"/>
+        <property name="level2" column="level2"/>
+        <property name="level3" column="level3"/>
+        <property name="level4" column="level4"/>
+        <property name="stat1" column="stat1"/>
+        <property name="stat2" column="stat2"/>
+        <property name="stat3" column="stat3"/>
+        <property name="stat4Bronze" column="stat4_bronze"/>
+        <property name="stat5Silver" column="stat5_silver"/>
+        <property name="stat6Gold" column="stat6_gold"/>
+        <property name="classId" column="class_id"/>
+    </class>
+</hibernate-mapping>

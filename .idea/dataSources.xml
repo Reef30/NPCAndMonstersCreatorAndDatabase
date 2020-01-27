@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="MySQL - @localhost" uuid="7a564fb9-939a-47ae-abcc-a39b54426159">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/wfrp4</jdbc-url>
+      <driver-properties>
+        <property name="serverTimezone" value="Europe/Warsaw" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="unmanaged-jpa/Hibernate" uuid="e0ae158f-3c7d-47c4-b427-53e812272a45">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/User/Desktop/studia/sem5/NPCAndMonstersCreatorAndDatabase/src/hibernate-release-5.4.7.Final/project/documentation/src/main/asciidoc/quickstart/tutorials/osgi/unmanaged-jpa/src/main/resources/META-INF/persistence.xml</remarks>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;MVCC=TRUE</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="a829ee83-5e9c-483d-a35c-cb19387933bc">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/User/Desktop/studia/sem5/NPCAndMonstersCreatorAndDatabase/src/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/wfrp4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+  </component>
+</project>

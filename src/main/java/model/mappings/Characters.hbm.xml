@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.mappings.Characters" table="characters" schema="wfrp4">
+        <id name="characterId" column="character_id"/>
+        <property name="raceId" column="race_id"/>
+        <property name="careerId" column="career_id"/>
+        <property name="careerLevel" column="career_level"/>
+        <property name="statWs" column="stat_ws"/>
+        <property name="statBs" column="stat_bs"/>
+        <property name="statS" column="stat_s"/>
+        <property name="statT" column="stat_t"/>
+        <property name="statI" column="stat_i"/>
+        <property name="statAgi" column="stat_agi"/>
+        <property name="statDex" column="stat_dex"/>
+        <property name="statInt" column="stat_int"/>
+        <property name="statWp" column="stat_wp"/>
+        <property name="statFel" column="stat_fel"/>
+        <property name="characterName" column="character_name"/>
+    </class>
+</hibernate-mapping>
