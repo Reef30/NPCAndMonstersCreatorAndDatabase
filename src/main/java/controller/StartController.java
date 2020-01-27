@@ -1,13 +1,11 @@
 package controller;
 
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -20,7 +18,7 @@ public class StartController implements Initializable {
     @FXML
     private void searchButtonClicked(ActionEvent event) throws IOException {
         masterController.getModelController().removeAllListeners();
-        FXMLLoader loader=new FXMLLoader(getClass().getResource("../view/searchView.fxml"));
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("../../resources/view/searchView.fxml"));
         AnchorPane pane = loader.load();
         SearchController searchController =loader.getController();
         searchController.setMasterController(masterController);
@@ -29,7 +27,7 @@ public class StartController implements Initializable {
     @FXML
     private void createButtonClicked(ActionEvent event) throws IOException {
         masterController.getModelController().removeAllListeners();
-        FXMLLoader loader=new FXMLLoader(getClass().getResource("../view/createView.fxml"));
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("../../resources/view/createView.fxml"));
         AnchorPane pane = loader.load();
         CreateController createController =loader.getController();
         createController.setMasterController(masterController);

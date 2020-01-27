@@ -323,7 +323,7 @@ public class ModelController{
 
     private synchronized void configuration(){
         cfg = new Configuration();
-        cfg.configure("src/hibernate.cfg.xml");
+        cfg.configure("hibernate.cfg.xml");
         factory = cfg.buildSessionFactory();
     }
     private synchronized void newTalentController(){

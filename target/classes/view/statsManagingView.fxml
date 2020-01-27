@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="rootPane" prefHeight="392.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StatsManagingController">
+   <children>
+      <GridPane fx:id="statsTab" alignment="CENTER" gridLinesVisible="true" layoutX="6.0" layoutY="7.0" prefHeight="62.0" prefWidth="287.0">
+        <columnConstraints>
+            <ColumnConstraints fx:id="ws" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fx:id="bs" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fx:id="s" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints fx:id="t" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints fx:id="i" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fx:id="agi" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fx:id="dex" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fx:id="intel" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fx:id="wp" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fx:id="fel" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="31.0" prefWidth="33.0" text="WS" textAlignment="CENTER" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="30.0" text="BS" textAlignment="CENTER" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="43.0" text="S" textAlignment="CENTER" GridPane.columnIndex="2" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="32.0" text="T" textAlignment="CENTER" GridPane.columnIndex="3" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="32.0" text="I" textAlignment="CENTER" GridPane.columnIndex="4" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="30.0" text="AGI" textAlignment="CENTER" GridPane.columnIndex="5" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="32.0" text="DEX" textAlignment="CENTER" GridPane.columnIndex="6" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="30.0" text="INT" textAlignment="CENTER" GridPane.columnIndex="7" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="30.0" text="WP" textAlignment="CENTER" GridPane.columnIndex="8" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="32.0" text="FEL" textAlignment="CENTER" GridPane.columnIndex="9" />
+            <TextField fx:id="wsText" GridPane.rowIndex="1" />
+            <TextField fx:id="bsText" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="sText" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="tText" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="iText" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="agiText" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <TextField fx:id="dexText" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <TextField fx:id="intText" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <TextField fx:id="wpText" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <TextField fx:id="felText" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="save" layoutX="123.0" layoutY="352.0" mnemonicParsing="false" onAction="#saveButtonClicked" text="Save" />
+      <Button fx:id="skillExplanation" layoutX="208.0" layoutY="161.0" mnemonicParsing="false" onAction="#skillExplanationButtonClicked" text="Explanation" />
+      <Button fx:id="talentExplanation" layoutX="208.0" layoutY="280.0" mnemonicParsing="false" onAction="#talentExplanationClicked" text="Explanation" />
+      <Label layoutX="14.0" layoutY="104.0" text="Skills" />
+      <Label layoutX="14.0" layoutY="226.0" text="Talents" />
+      <TextField fx:id="characterName" layoutX="172.0" layoutY="87.0" prefHeight="25.0" prefWidth="118.0" promptText="name" />
+      <ListView fx:id="skillsListView" layoutX="14.0" layoutY="122.0" prefHeight="104.0" prefWidth="188.0" />
+      <ListView fx:id="talentsListView" layoutX="14.0" layoutY="241.0" prefHeight="104.0" prefWidth="188.0" />
+      <AnchorPane layoutX="-346.0" layoutY="-119.0" prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane fx:id="loading" prefHeight="392.0" prefWidth="301.0" />
+   </children>
+</AnchorPane>

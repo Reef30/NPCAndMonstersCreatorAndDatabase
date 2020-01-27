@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.mappings.SkillOfRace" table="skill_of_race" schema="wfrp4">
+        <id name="skillOfRaceId" column="skill_of_race_id"/>
+        <property name="raceId" column="race_id"/>
+        <property name="skillId" column="skill_id"/>
+        <property name="specializationId" column="specialization_id"/>
+    </class>
+</hibernate-mapping>

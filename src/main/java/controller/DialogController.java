@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+
 public class DialogController implements Initializable {
     @FXML
     Label dialogLabel;

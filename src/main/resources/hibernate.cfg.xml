@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+   <session-factory>
+      <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+      <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/wfrp4?serverTimezone=UTC</property>
+      <property name="hibernate.connection.username">WFRPAdmin</property>
+      <property name="hibernate.connection.password">WFRP4</property>
+      <property name="hibernate.connection.pool_size">100</property>
+      <property name="hibernate.current_session_context_class">thread</property>
+      <property name="hibernate.show_sql">true</property>
+      <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+      <mapping resource="Races.hbm.xml" />
+      <mapping resource="Classes.hbm.xml" />
+      <mapping resource="Careers.hbm.xml"/>
+      <mapping resource="RaceStats.hbm.xml"/>
+      <mapping resource="Characters.hbm.xml"/>
+      <mapping resource="Skills.hbm.xml"/>
+      <mapping resource="SkillSpecializations.hbm.xml"/>
+      <mapping resource="Talents.hbm.xml"/>
+      <mapping resource="TalentsOfCareer.hbm.xml"/>
+      <mapping resource="TalentsOfCharacter.hbm.xml"/>
+      <mapping resource="TalentsOfRace.hbm.xml"/>
+      <mapping resource="SkillOfRace.hbm.xml"/>
+      <mapping resource="SkillOfCareer.hbm.xml"/>
+      <mapping resource="SkillsOfCharacter.hbm.xml"/>
+
+   </session-factory>
+</hibernate-configuration>

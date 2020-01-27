@@ -86,7 +86,7 @@ public class StatsManagingController implements Initializable,DatabaseListener {
     }
     private void errorNameCharacterView(){
         try {
-            FXMLLoader loader=new FXMLLoader(getClass().getResource("../view/dialogView.fxml"));
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("../../resources/view/dialogView.fxml"));
             Parent root = loader.load();
             DialogController dialogController = loader.getController();
             dialogController.setText("You need to name character!");
@@ -100,7 +100,7 @@ public class StatsManagingController implements Initializable,DatabaseListener {
     }
     private void createLoadingView(){
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/loadingView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../../resources/view/loadingView.fxml"));
             Parent root = loader.load();
             LoadingController loadingController = loader.getController();
             loading.getChildren().setAll(root);
@@ -185,7 +185,7 @@ public class StatsManagingController implements Initializable,DatabaseListener {
     }
     private void talentExplanationReady(){
         try {
-            FXMLLoader loader=new FXMLLoader(getClass().getResource("../view/dialogView.fxml"));
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("../../resources/view/dialogView.fxml"));
             Parent root = loader.load();
             DialogController dialogController = loader.getController();
             String name=explainedTalent.getTalentName();
@@ -207,7 +207,7 @@ public class StatsManagingController implements Initializable,DatabaseListener {
     }
     private void skillExplanationReady(){
         try {
-            FXMLLoader loader=new FXMLLoader(getClass().getResource("../view/dialogView.fxml"));
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("../../resources/view/dialogView.fxml"));
             Parent root = loader.load();
             DialogController dialogController = loader.getController();
             String name=explainedSkill.getSkillName();

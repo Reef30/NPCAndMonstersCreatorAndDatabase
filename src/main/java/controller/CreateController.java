@@ -14,7 +14,10 @@ import model.ModelController;
 import model.mappings.*;
 import java.io.IOException;
 import java.net.URL;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.ResourceBundle;
+
 
 public class CreateController implements Initializable,DatabaseListener{
     private Random rand;
@@ -144,7 +147,7 @@ public class CreateController implements Initializable,DatabaseListener{
     }
     public void setLoadingGif(){
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/loadingView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../../resources/view/loadingView.fxml"));
             Parent root = loader.load();
             LoadingController loadingController = loader.getController();
             loading.getChildren().setAll(root);
@@ -156,7 +159,7 @@ public class CreateController implements Initializable,DatabaseListener{
     }
     public void setStatsManagingView(){
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/statsManagingView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../../resources/view/statsManagingView.fxml"));
             AnchorPane pane = loader.load();
             statsManagingController = loader.getController();
             rootPane.getChildren().setAll(pane);
@@ -206,7 +209,7 @@ public class CreateController implements Initializable,DatabaseListener{
             @Override
             public void run() {
                 if(masterController.getExchanger().getRacesListUpdated()){
-                    ArrayList<Races>racesList=masterController.getExchanger().getRacesList();
+                    ArrayList<Races> racesList=masterController.getExchanger().getRacesList();
                             for(int i=0;i<racesList.size();i++) {
                                 racesChoice.getItems().add(racesList.get(i).getRaceName());
                             }

@@ -37,7 +37,7 @@ public class SearchController implements Initializable,DatabaseListener {
         if(tab.getSelectionModel().getSelectedIndex()!=-1){
             DetailsController detailsController;
             //dopisac wczytywanie danych konkretnego obiektu po jego wyborze
-            FXMLLoader loader=new FXMLLoader(getClass().getResource("../view/detailsView.fxml"));
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("../../resources/view/detailsView.fxml"));
             AnchorPane pane = loader.load();
             rootPane.getChildren().setAll(pane);
             detailsController =loader.getController();
@@ -46,7 +46,7 @@ public class SearchController implements Initializable,DatabaseListener {
             detailsController.setDetailedCharacter(tab.getSelectionModel().getSelectedItem().getCharacterId());
         }else{
             try {
-                FXMLLoader loader=new FXMLLoader(getClass().getResource("../view/dialogView.fxml"));
+                FXMLLoader loader=new FXMLLoader(getClass().getResource("../../resources/view/dialogView.fxml"));
                 Parent root = loader.load();
                 DialogController dialogController = loader.getController();
                 dialogController.setText("Choose character to see details!");

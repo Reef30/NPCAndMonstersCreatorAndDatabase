@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.mappings.SkillSpecializations" table="skill_specializations" schema="wfrp4">
+        <id name="specializationId" column="specialization_id"/>
+        <property name="skillId" column="skill_id"/>
+        <property name="specializationName" column="specialization_name"/>
+    </class>
+</hibernate-mapping>

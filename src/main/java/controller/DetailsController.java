@@ -72,7 +72,7 @@ public class DetailsController implements Initializable,DatabaseListener {
     private void editButtonClicked(ActionEvent event)  {
         try {
             //Load second scene
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/createView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../../resources/view/createView.fxml"));
             Parent root = loader.load();
             //Get controller of scene2
             //Show scene 2 in new window
